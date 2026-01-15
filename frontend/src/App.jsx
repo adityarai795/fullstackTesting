@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = React.useState(null);
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/data");
+      const response = await fetch("http://3.7.15.94:3000/api/data");
       const data = await response.json();
       console.log(data.message);
       setData(data.message);
